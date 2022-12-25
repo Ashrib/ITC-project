@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+}
+.head{
+    display: flex;
+    height: 100px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.399);
+}
+.logo-div{
+    width: 120px;
+}
+.logo{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    width: 100%;
+}
+.nav-lite{
+    display: none;
+}
+.upper,.lower{
+    height: 50%;
+    border-top: 1px solid black;
+}
+.lower>ul{
+    display: flex;
+    gap: 7%;
+    list-style: none;
+}
+/* .lower>ul>li{
+    display: inline-block;
+} */
+.nav-lite>i{
+    height: 100%;
+}
+.body, .cards-container{
+    height: auto;
+}
+.slider{
+    height: 400px;
+}
+.carousel, .carousel-inner,.carousel-item, .carousel-item>img{
+    height: inherit !important;
+}
+.cards-container{
+    margin-top: 40px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cards{
+    height: 400px;
+    width: 280px;
+    border: 2px solid gray;
+    text-align: center;
+    margin-top: 20px;
+}
+.card-img{
+    height: 35%;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 35%;
+}
+.card-content>h3{
+    color: red;
+}
+.card-content>button{
+    border: none;
+    background-color: rgb(255,188,13);
+    width: auto;
+    
+}
+@media screen and (max-width: 1024px) {
+    .head{
+        height: 50px;
+    }
+    .nav-lite{
+        display: flex;
+    }  
+    .nav{
+        display: none;
+    }
+    .logo-div{
+        width: 60px;
+    }
+}
