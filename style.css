@@ -5,6 +5,8 @@ body{
     display: flex;
     height: 100px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.399);
+    margin-bottom: 40px;
+    padding-top: 10px;
 }
 .logo-div{
     width: 120px;
@@ -16,26 +18,39 @@ body{
 .nav{
     display: flex;
     flex-direction: column;
-    background-color: blue;
     width: 100%;
 }
-.nav-lite{
-    display: none;
+.btn1{
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255,188,13);
+}
+.fa-location-dot{
+    color: rgb(217, 2, 2);
+}
+.location{
+    cursor: pointer;
+}
+.upper,.navbar,.container-fluid{
+    background-color: white !important;
+    padding: 0px 0px !important;
+}.container-fluid{
+    padding: 0px 30px !important;
 }
 .upper,.lower{
     height: 50%;
-    border-top: 1px solid black;
 }
 .lower>ul{
     display: flex;
     gap: 7%;
     list-style: none;
 }
-/* .lower>ul>li{
-    display: inline-block;
-} */
-.nav-lite>i{
-    height: 100%;
+.lower>ul>li{
+    display: flex;
+    align-items: center;
+}
+.dropdown>a{
+    color: black;
 }
 .body, .cards-container{
     height: auto;
@@ -48,7 +63,6 @@ body{
 }
 .cards-container{
     margin-top: 40px;
-    background-color: burlywood;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -76,19 +90,57 @@ body{
     border: none;
     background-color: rgb(255,188,13);
     width: auto;
-    
 }
-@media screen and (max-width: 1024px) {
-    .head{
-        height: 50px;
-    }
-    .nav-lite{
-        display: flex;
-    }  
-    .nav{
-        display: none;
-    }
-    .logo-div{
-        width: 60px;
-    }
+.footer{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.portions{
+    width: 280px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.links{
+    display: flex;
+    padding-bottom: 40px;
+    border-bottom: 1px solid gray;
+}
+.icons{
+    display: flex;
+    gap: 15px;
+    padding-left: 30px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid gray;
+    height: 40px;
+    width: 40px;
+}
+.icons>a, .text>span>a{
+    text-decoration: none;
+    color: black;
+}
+.links>.images{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    padding-right: 50px;
+
+}
+.text{
+    padding: 10px 0px;
+}
+.text>span{
+    margin: 0px 10px;
 }

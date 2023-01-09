@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4aeacb7a4b.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
     <div class="main">
@@ -13,15 +12,38 @@
             <div class="logo-div">
                 <img class="logo" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/arches-logo_108x108.jpg" alt="mc logo">
             </div>
-            <div class="nav-lite">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+            <!-- navbar div -->
             <div class="nav">
-
-                <div class="upper">ff</div>
+                <!-- navbar upper portion -->
+                <div class="upper">
+                    <!-- navbar from bootstrap -->
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                          <a class="location"><i class="fa-solid fa-location-dot"></i> enter your location</a>
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn1" type="submit">Search</button>
+                          </form>
+                        </div>
+                    </nav>
+                </div>
+                <!-- navbar lower portion -->
                 <div class="lower">
                     <ul>
-                        <li>Our Menu</li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Our Menu
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Breakfast</a></li>
+                                <li><a class="dropdown-item" href="#">Burgers</a></li>
+                                <li><a class="dropdown-item" href="#">Happy meal</a></li>
+                                <li><a class="dropdown-item" href="#">McCafe Coffee</a></li>
+                                <li><a class="dropdown-item" href="#">McCafe Bakery</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">see more</a></li>
+                              </ul>
+                        </li>
                         <li>About Our Food</li>
                         <li>Exclusive Deals</li>
                         <li>Download App</li>
@@ -30,8 +52,11 @@
                     </ul>
                 </div>
             </div>
+                <!-- navbar div end-->
+
         </div>
         <div class="body">
+            <!-- image slider from bootstrap -->
             <div class="slider">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -54,62 +79,138 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-                  
             </div>
+            <!-- slider end -->
+            <!-- cards container div -->
             <div class="cards-container">
                 <div class="cards">
                     <img class="card-img" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/1_3_PUB_McCafe_376x252v.jpg" alt="card-img">
                    <div class="card-content">
                     <h3>McCafé</h3>
-                    <span>jhhj jkhb knl hbsad hsbbjsd </span>
+                    <span>McCafé® Coffee, Espresso Drinks, Bakery Sweets & More</span>
                     <button>Order Now</button>
                    </div>
                 </div>
                 <div class="cards">
-                    <img class="card-img" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/1_3_PUB_McCafe_376x252v.jpg" alt="card-img">
+                    <img class="card-img" src="https://s7d1.scene7.com/is/image/mcdonalds/fco_mcdelivery_new_desktop:1-3-full-bleed-tile-desktop?resmode=sharp2" alt="card-img">
                    <div class="card-content">
-                    <h3>McCafé</h3>
-                    <span>jhhj jkhb knl hbsad hsbbjsd </span>
+                    <h3>Happy Meal®</h3>
+                    <span>Enjoy an easy meal for kids when you order a Happy Meal®.</span>
                     <button>Order Now</button>
                    </div>
                 </div>
                 <div class="cards">
-                    <img class="card-img" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/1_3_PUB_McCafe_376x252v.jpg" alt="card-img">
+                    <img class="card-img" src="https://s7d1.scene7.com/is/image/mcdonalds/FCO_wakeup_Breakfast_Desktop:1-3-full-bleed-tile-desktop?resmode=sharp2" alt="card-img">
                    <div class="card-content">
-                    <h3>McCafé</h3>
-                    <span>jhhj jkhb knl hbsad hsbbjsd </span>
+                    <h3>McCafé® Bakery</h3>
+                    <span>McDonald's Sweets & Treats! Order your favorite McDonald's desserts.</span>
                     <button>Order Now</button>
                    </div>
                 </div>
                 <div class="cards">
-                    <img class="card-img" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/1_3_PUB_McCafe_376x252v.jpg" alt="card-img">
+                    <img class="card-img" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/3PUB_McDelivery_LP_McDeliveryBagv4_376x252.jpg" alt="card-img">
                    <div class="card-content">
-                    <h3>McCafé</h3>
-                    <span>jhhj jkhb knl hbsad hsbbjsd </span>
+                    <h3>McDelivery</h3>
+                    <span>Order McDonald’s for Delivery on Uber Eats, DoorDash or Grubhub.</span>
                     <button>Order Now</button>
                    </div>
                 </div>
                 <div class="cards">
-                    <img class="card-img" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/1_3_PUB_McCafe_376x252v.jpg" alt="card-img">
+                    <img class="card-img" src="https://s7d1.scene7.com/is/image/mcdonalds/ArchCard_TrendingPage_Desktop_v22_1168x520:1-column-desktop?resmode=sharp2" alt="card-img">
                    <div class="card-content">
-                    <h3>McCafé</h3>
-                    <span>jhhj jkhb knl hbsad hsbbjsd </span>
+                    <h3>Trending Now</h3>
+                    <span>Our app is now the only place you’ll earn MyMcDonald’s Rewards on every McDelivery order.</span>
                     <button>Order Now</button>
                    </div>
                 </div>
                 <div class="cards">
-                    <img class="card-img" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/1_3_PUB_McCafe_376x252v.jpg" alt="card-img">
+                    <img class="card-img" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/3PUB_OrderOnYourTime_376x376moplp.jpg" alt="card-img">
                    <div class="card-content">
-                    <h3>McCafé</h3>
-                    <span>jhhj jkhb knl hbsad hsbbjsd </span>
+                    <h3>Mobile Order & Pay</h3>
+                    <span>Get the our app for Drive Thru and Curbside pickup and contactless Mobile Order & Pay.</span>
                     <button>Order Now</button>
                    </div>
                 </div>
+                <div class="cards">
+                    <img class="card-img" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/3PUB_EarnandRedeem_Redeem_376x376.jpg" alt="card-img">
+                   <div class="card-content">
+                    <h3>Rewards</h3>
+                    <span>MyMcDonald’s Rewards points, quickly pay and redeem your favorites.</span>
+                    <button>Order Now</button>
+                   </div>
+                </div>
+                <div class="cards">
+                    <img class="card-img" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/1pub_McDeliveryintheApp_Launch_1168x520.jpg" alt="card-img">
+                   <div class="card-content">
+                    <h3>Our App</h3>
+                    <span>Straight to the Points: McDelivery® in the App</span>
+                    <button>Order Now</button>
+                   </div>
+                </div>
+            </div>
+            <!-- cards container div end-->
+        </div>
+        <div class="footer">
+            <div class="info">
+                <div class="portions">
+                    <h6>About Us</h6>
+                    <span>About Us</span>
+                    <span>Our History</span>
+                    <span>Leadership Team</span>
+                    <span>Values In Action</span>
+                </div>
+                <div class="portions">
+                    <h6>Services</h6>
+                    <span>Services Overview</span>
+                    <span>Wi-Fi</span>
+                    <span>PlayPlaces & Parties</span>
+                    <span>McDelivery®</span>
+                </div>
+                <div class="portions">
+                    <h6>Community</h6>
+                    <span>Community</span>
+                    <span>HACER® Scholarships for Hispanic Students</span>
+                    <span>McDonald’s Asian Pacific American</span>
+                    <span>Ronald McDonald House Charities</span>
+                </div>
+                <div class="portions">
+                    <h6>Contact Us</h6>
+                    <span>Contact Us</span>
+                    <span>Employment</span>
+                    <span>Donations</span>
+                    <span>Gift Card FAQs</span>
+                </div>
+            </div>
+            <div class="links">
+                <div class="icons">
+                    <a href="https://www.facebook.com/McDonalds/" target="_blank">
+                        <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+                    </a>
+                    <a href="https://twitter.com/mcdonalds" target="_blank">
+                        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                    </a>
+                    <a href="https://www.instagram.com/mcdonalds/" target="_blank">
+                        <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCRI5ZedBs0_BYY4PlxD6m7w" target="_blank">
+                        <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+                    </a>
+                </div>
+                <div class="images">
+                    <div class="link-img"><img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/logo/app_store_badge.png" alt=""></div>
+                    <div class="link-img"><img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/logo/google_play_badge.png" alt=""></div>
+                </div>
+            </div>
+            <div class="text">
+                <span><a href="https://www.mcdonalds.com/us/en-us/privacy-overview.html">Privacy (Updated)</a></span>
+                <span><a href="https://www.mcdonalds.com/us/en-us/privacy.html#California-notice">California Privacy Notice</a></span>
+                <span><a href="https://www.mcdonalds.com/us/en-us/terms-and-conditions.html">Terms & Conditions </a></span>
+                <span><a href="https://www.mcdonalds.com/us/en-us/accessibility.html">Accessibility</a></span>
+                <span><a href="https://www.mcdonalds.com/us/en-us/download-app.html#">Cookies Settings</a></span>
             </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
 </body>
 </html>
